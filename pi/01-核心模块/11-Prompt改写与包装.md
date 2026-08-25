@@ -2,6 +2,8 @@
 
 源码入口：[agent-session.ts](https://github.com/earendil-works/pi/blob/864b35c462f9623579b068e9cab848419f9e1d0f/packages/coding-agent/src/core/agent-session.ts)、[system-prompt.ts](https://github.com/earendil-works/pi/blob/864b35c462f9623579b068e9cab848419f9e1d0f/packages/coding-agent/src/core/system-prompt.ts)、[prompt-templates.ts](https://github.com/earendil-works/pi/blob/864b35c462f9623579b068e9cab848419f9e1d0f/packages/coding-agent/src/core/prompt-templates.ts)。
 
+配套样例：[输入 Prompt 示例](12-输入Prompt示例.md)。
+
 ## 1. 总结：Pi 不是单点 prompt rewriter
 
 Pi 的“改写/包装”分散在进入 runtime 的不同边界，主要是确定性文本拼装、占位符替换和 extension hook 覆盖，**不会在普通用户输入前调用另一个 LLM 改写**。

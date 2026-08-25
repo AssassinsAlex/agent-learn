@@ -7,6 +7,7 @@
 | 顺序 | 文档 | 目标 |
 | --- | --- | --- |
 | 0 | [学习路线](00-总览/学习路线.md) | 明确范围、问题与学习顺序 |
+| 0.1 | [全项目学习覆盖审查](00-总览/全项目学习覆盖审查.md) | 审查已学边界，按价值定位遗漏设计 |
 | 1 | [整体架构](00-总览/整体架构.md) | 建立 agent 运行闭环的全景图 |
 | 2 | [模块索引](01-核心模块/README.md) | 从总览进入各核心部件 |
 | 3 | [源码阅读索引](02-源码阅读/README.md) | 将结论关联到具体文件和符号 |
@@ -29,6 +30,6 @@
 - 项目源码位置：`C:\\workspace\\open_source_agent\\pi-earendil`
 - 当前版本/提交：`0.80.10` / `864b35c462f9623579b068e9cab848419f9e1d0f`
 - 本地运行环境：Node `>=22.19.0`，npm workspace，TypeScript ESM
-- 当前学习阶段：阶段 2，已完成 Agent Core 映射、Session Tree 与 Compaction 层第一版，确认 Session Tree 是 Pi 的显著实现亮点。
+- 当前学习阶段：阶段 2，已完成 Agent Core 映射、Session Tree 与 Compaction 层第一版，确认 Session Tree 是 Pi 的显著实现亮点；全项目审查表明下一优先级是 Pi CLI Runtime、`pi-ai` 与 extensions/trust。
 
-下一步：继续从 `packages/agent/src/harness/compaction/compaction.ts` 和 `packages/agent/src/harness/session/session.ts` 做源码实验，再回到 coding-agent 的自动 compaction 触发链路。
+下一步：从 `packages/coding-agent/src/main.ts -> core/agent-session-runtime.ts -> core/agent-session-services.ts -> core/agent-session.ts` 完成真实运行时主链，再进入 `packages/ai` 的 provider 归一化。

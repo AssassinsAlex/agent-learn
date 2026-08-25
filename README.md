@@ -6,7 +6,7 @@
 
 | 项目 | 当前重点 | 入口 | 源码基线 |
 | --- | --- | --- | --- |
-| Pi | `agent-core`：runtime、Harness、Session、Compaction、工具与 prompt | [Pi 学习档案](pi/README.md) | [`pi` commit `864b35c`](https://github.com/earendil-works/pi/tree/864b35c462f9623579b068e9cab848419f9e1d0f) |
+| Pi | 已深入 `agent-core`；下一层为 CLI Runtime、`pi-ai`、extensions/trust | [Pi 学习档案](pi/README.md) · [覆盖审查](pi/00-总览/全项目学习覆盖审查.md) | [`pi` commit `864b35c`](https://github.com/earendil-works/pi/tree/864b35c462f9623579b068e9cab848419f9e1d0f) |
 
 ## 统一约定
 
