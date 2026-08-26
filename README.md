@@ -7,6 +7,7 @@
 | 项目 | 当前重点 | 入口 | 源码基线 |
 | --- | --- | --- | --- |
 | Pi | 已深入 `agent-core`；下一层为 CLI Runtime、`pi-ai`、extensions/trust | [Pi 学习档案](pi/README.md) · [覆盖审查](pi/00-总览/全项目学习覆盖审查.md) | [`pi` commit `864b35c`](https://github.com/earendil-works/pi/tree/864b35c462f9623579b068e9cab848419f9e1d0f) |
+| DeepSeek Harness | 已建立整体架构与 `packages/compaction` 导览 | [DeepSeek Harness 学习档案](deepseek-harness/README.md) | [`deepseek-harness` commit `b150a55`](https://github.com/deepseek-ai/deepseek-harness/tree/b150a551b8d465e31e418e1b2eaf5e79bbb7d28e) |
 
 ## 统一约定
 
@@ -20,7 +21,14 @@
 ```text
 agent-learn/
 ├── README.md
-└── pi/
+├── pi/
+│   ├── README.md
+│   ├── 00-总览/
+│   ├── 01-核心模块/
+│   ├── 02-源码阅读/
+│   ├── 03-实验与验证/
+│   └── 04-问题与复盘/
+└── deepseek-harness/
     ├── README.md
     ├── 00-总览/
     ├── 01-核心模块/
